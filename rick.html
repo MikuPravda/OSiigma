@@ -10,18 +10,20 @@
     background-size: cover;
     height: 100vh;
     margin: 0;
-    overflow: hidden; /* Enable scrolling for the entire page */
+    overflow-y: scroll; /* Enable scrolling for the entire page */
     color: #fff; /* Set text color to contrast with the background */
 }
 
-        .scrollable-area {
-            background: #fff; /* Transparent background for scrollable area */
-            margin: auto;
-            width: 80%; /* Adjust the width as needed */
-            max-width: 800px; /* Set a maximum width */
-            overflow-y: scroll; /* Enable vertical scrollbar if needed */
-            max-height: 600px; /* Set a maximum height */
-        }
+.scrollable-area {
+    background: #fff; /* Transparent background for scrollable area */
+    margin: auto;
+    width: calc(80% - 15px); /* Adjust the width as needed */
+    max-width: 800px; /* Set a maximum width */
+    height: 100%; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrollbar for the element itself */
+    padding-right: 15px; /* Add padding to the right for the scrollbar */
+    box-sizing: border-box; /* Include padding in the total width */
+}
 
         .friend-box {
             background: rgba(255, 255, 255, 0.7); /* Light colored background for friend boxes */
