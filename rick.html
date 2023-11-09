@@ -15,7 +15,7 @@
 }
 
 .scrollable-area {
-    background: rgba(255, 255, 255, 0.5); /* Transparent background for scrollable area */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for scrollable area */
     margin: auto;
     width: calc(80% - 15px); /* Adjust the width as needed */
     max-width: 800px; /* Set a maximum width */
@@ -23,6 +23,12 @@
     overflow-y: auto; /* Enable vertical scrollbar for the element itself */
     padding-right: 15px; /* Add padding to the right for the scrollbar */
     box-sizing: border-box; /* Include padding in the total width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'CuteFont', sans-serif; /* Replace 'CuteFont' with an actual cute font supporting Vietnamese characters */
+    color: #333; /* Darker text color for better visibility on the beach background */
 }
 
         .friend-box {
