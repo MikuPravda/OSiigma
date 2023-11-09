@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Background with Scrollable Element</title>
+    <style>
+        body {
+            margin: 0;
+            background: url('your-background-image.jpg') fixed; /* Set your background image and make it fixed */
+            background-size: cover; /* Adjust the background size as needed */
+        }
+
+        .scrollable-area {
+            background: rgba(255, 255, 255, 0.7); /* Light-colored background for scrollable area */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            width: 80%; /* Adjust the width as needed */
+            max-width: 800px; /* Set a maximum width */
+            overflow-y: auto; /* Enable vertical scrollbar if needed */
+            max-height: 600px; /* Set a maximum height */
+            position: relative; /* Position relative to keep it within the body */
+            top: 50%; /* Center the scrollable area vertically */
+            transform: translateY(-50%); /* Adjust for centering */
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-area">
+        <!-- Your content goes here -->
+        <h1>Your Scrollable Content</h1>
+        <p>This content will scroll while the background remains fixed.</p>
+        <!-- End of content -->
+    </div>
+</body>
+</html>
